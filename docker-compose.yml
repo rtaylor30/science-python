@@ -1,0 +1,14 @@
+version: '3'
+services:
+  jupyter:
+    image: rtaylor30/science-python:latest
+    volumes:
+      - "./:/app"
+    expose:
+      - "8888:8888"
+  python:
+    image: rtaylor30/science-python:latest
+    entrypoint: python3
+    command: ""
+    volumes:
+      - "./:/app"
