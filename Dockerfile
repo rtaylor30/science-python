@@ -12,4 +12,4 @@ EXPOSE 8888
 
 WORKDIR /app
 
-CMD [ "jupyter", "notebook" ]
+CMD [ "jupyter", "notebook", "--allow-root" ]
