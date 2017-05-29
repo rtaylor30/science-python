@@ -5,7 +5,7 @@ RUN apt update \
     && ls -s /usr/bin/python3 /usr/bin/python \
     && apt install -q -y python3-dev g++ \
     && pip3 install --upgrade pip \
-    && pip3 install numpy scipy jupyter pandas urllib3 ostruct scikit-image scikit-learn opencv-python tensorflow keras imageio \
+    && pip3 install numpy matplotlib scipy jupyter pandas urllib3 ostruct scikit-image scikit-learn opencv-python tensorflow keras imageio \
     && apt remove --purge -q -y python3-dev g++
 
 EXPOSE 8888

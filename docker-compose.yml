@@ -4,7 +4,7 @@ services:
     image: rtaylor30/science-python:latest
     volumes:
       - "./:/app"
-    expose:
+    ports:
       - "8888:8888"
   python:
     image: rtaylor30/science-python:latest
